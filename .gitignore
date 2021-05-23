@@ -1,4 +1,5 @@
 node_modules
 .secret
 .DS_Store
+yarn.lock
 build/contracts/*
