@@ -1,0 +1,77 @@
+➜  vonder-token git:(master) ✗ truffle deploy --network binanceTestnet
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/VonderToken.sol
+> Compilation warnings encountered:
+
+    /Users/hbot/Desktop/v.swap/vonder-token/contracts/VonderToken.sol: Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+,/Users/hbot/Desktop/v.swap/vonder-token/contracts/VonderToken.sol:19:5: Warning: Documentation tag on non-public state variables will be disallowed in 0.7.0. You will need to use the @dev tag explicitly.
+    /// @notice A record of each accounts delegate
+    ^--------------------------------------------^
+
+> Artifacts written to /Users/hbot/Desktop/v.swap/vonder-token/build/contracts
+> Compiled successfully using:
+   - solc: 0.6.12+commit.27d51765.Emscripten.clang
+
+
+
+Starting migrations...
+======================
+> Network name:    'binanceTestnet'
+> Network id:      97
+> Block gas limit: 29999542 (0x1c9c1b6)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x0251bf401b10136582e1586b3a83f3858195aa83d1776e83611da175370dec4d
+   > Blocks: 3            Seconds: 8
+   > contract address:    0x48c0FBDF1A18FfC5EeC67cB63760107b38436b1D
+   > block number:        9092583
+   > block timestamp:     1621771758
+   > account:             0xad1F66Acea98733D63cd8FC522118e4014Cb3F79
+   > balance:             2.116864976
+   > gas used:            129186 (0x1f8a2)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00129186 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00129186 ETH
+
+
+2_deploy_von_token.js
+=====================
+
+   Deploying 'VonderToken'
+   -----------------------
+   > transaction hash:    0xf0a64c35a76b603e257485f146f2d278ca213c1a70a617cff705f53cfd02c3fe
+   > Blocks: 3            Seconds: 8
+   > contract address:    0x869Ec5e031B2A87C028Fd120592A16b54Ac2057d
+   > block number:        9092590
+   > block timestamp:     1621771779
+   > account:             0xad1F66Acea98733D63cd8FC522118e4014Cb3F79
+   > balance:             2.099783126
+   > gas used:            1665919 (0x196b7f)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01665919 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.01665919 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.01795105 ETH
