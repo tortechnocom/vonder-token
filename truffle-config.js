@@ -2,11 +2,16 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const fs = require('fs');
 
-const { infuraProjectId, mainnetPrivateKeys, privateKeys, etherApiKey, bscApiKey } = JSON.parse(fs.readFileSync('.secret').toString().trim());
+const { infuraProjectId,mainnetBkcPrivateKeys, mainnetPrivateKeys, privateKeys, etherApiKey, bscApiKey } = JSON.parse(fs.readFileSync('.secret').toString().trim());
 
 const binanceProvider = new HDWalletProvider({
   privateKeys: privateKeys,
   providerOrUrl: `https://data-seed-prebsc-1-s1.binance.org:8545`
+});
+
+const bitkubMainnetProvider = new HDWalletProvider({
+  privateKeys: mainnetBkcPrivateKeys,
+  providerOrUrl: `https://rpc.bitkubchain.io`
 });
 
 module.exports = {
