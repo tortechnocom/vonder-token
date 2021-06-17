@@ -2,10 +2,10 @@ pragma solidity 0.6.12;
 
 import "@pancakeswap/pancake-swap-lib/contracts/token/BEP20/BEP20.sol";
 
-// VonderToken with Governance.
-contract VonderToken is BEP20('TST', 'TST') {
+// TTNCToken with Governance.
+contract TTNCToken is BEP20('Tortechnocom', 'TTNC') {
     constructor () public {
-        _mint(_msgSender(), 1000000 * (10 ** uint256(decimals())));
+        _mint(_msgSender(), 1000000000 * (10 ** uint256(decimals())));
     }
     /// @notice Creates `_amount` token to `_to`. Must only be called by the owner (MasterChef).
     function mint(address _to, uint256 _amount) public onlyOwner {
